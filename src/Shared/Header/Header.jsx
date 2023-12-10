@@ -1,9 +1,8 @@
 import React from "react";
 import logo from "../../assets/logo.png";
-import user from "../../assets/user.png";
 import moment from "moment";
 import Marquee from "react-fast-marquee";
-import { Button, Container, Nav, NavDropdown, Navbar } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 const Header = () => {
   return (
@@ -28,24 +27,6 @@ const Header = () => {
             be a React component, multiple React components, or just some text.
           </Marquee>
         </div>
-        <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
-          <Container>
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-            <Navbar.Collapse id="responsive-navbar-nav">
-              <Nav className="mx-auto text-center">
-                <Nav.Link href="#home">Home</Nav.Link>
-                <Nav.Link href="#about">About</Nav.Link>
-                <Nav.Link href="#career">Career</Nav.Link>
-              </Nav>
-              <Nav>
-                <img style={{ width: "40px", height: "40px" }} src={user} alt="" />
-                <Button className="rounded-0 px-4 mx-2" variant="dark">
-                  Login
-                </Button>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
       </Container>
     </div>
   );
