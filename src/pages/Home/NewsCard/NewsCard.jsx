@@ -8,6 +8,7 @@ import "@smastrom/react-rating/style.css";
 
 const NewsCard = ({ news }) => {
   const { _id, title, details, image_url, author, total_view, rating } = news;
+
   return (
     <Card className="mb-4">
       <Card.Header>
